@@ -1,11 +1,6 @@
+import { getSeries } from './generics/getSeries';
 
-import { Hero } from './classes/Hero'
-// import { Hero as SuperHero } from './classes/Hero'
-// import * as HeroClasses from './classes/Hero'
-
-
-
-const ironman = new Hero('Ironman', 1, 55)
-
-console.log( ironman )
-console.log( ironman.power )
+getSeries(1)
+    .then( resp => console.log( resp ) )
+    .catch( error => console.log( error ) )
+    .finally( () => console.log( 'Fin de getSeries' ) )
