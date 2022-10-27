@@ -1,0 +1,20 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "https://jugaz.github.io/maps-app/",
+  "main": "index.js",
+  "scripts": {
+    "watch": "tsc -w",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jugaz/TypeScript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jugaz/TypeScript/issues"
+  },
+  "homepage": "https://github.com/jugaz/TypeScript#readme"
+}
