@@ -1,6 +1,8 @@
-import { getSeries } from './generics/get-series';
+import { Series } from './decorators/series-class';
 
-getSeries(1)
-    .then( friends => console.log( "f",friends ) )
-    .catch( error => console.log( error ) )
-    .finally( () => console.log( 'Fin de getSeries' ) )
+
+const friends = new Series('Vue');
+
+// (Series.prototype as any).customName = 'A'
+
+friends.saveSeriesToDB(2)

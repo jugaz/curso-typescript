@@ -1,6 +1,6 @@
 import { printObject, genericF, genericFArrow } from '../generics/generics';
 import { Villain, Hero } from '../interfaces';
-
+import { getSeries } from '../generics/get-series';
 
 // printObject(123);
 // printObject(new Date())
@@ -20,3 +20,8 @@ const deadpool = {
 
 /* Calling the genericFArrow function with the type of Villain. */
 console.log( genericFArrow<Villain>(deadpool) )
+
+getSeries(1)
+    .then( friends => console.log( "f",friends ) )
+    .catch( error => console.log( error ) )
+    .finally( () => console.log( 'Fin de getSeries' ) )
