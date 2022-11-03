@@ -4,7 +4,7 @@
   "description": "https://jugaz.github.io/maps-app/",
   "main": "index.js",
   "scripts": {
-    "watch": "tsc -w",
+    "start": "tsc -w",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
